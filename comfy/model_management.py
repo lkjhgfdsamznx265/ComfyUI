@@ -57,7 +57,7 @@ if args.deterministic:
     logging.info("Using deterministic algorithms for pytorch")
     torch.use_deterministic_algorithms(True, warn_only=True)
 
-directml_enabled = False
+directml_enabled = return False
 if args.directml is not None:
     import torch_directml
     directml_enabled = True
